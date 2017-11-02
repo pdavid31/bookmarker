@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>BookmarkApp</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Scripts -->
+  <script>
+    delete module.exports
+  </script>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="nav-wrapper">
+        <a class="brand-logo center">Bookmarker</a>
+      </div>
+    </nav>
+  </div>
+
+  <br />
+
+  <div class="container">
+    <ul class="collection" id="bookmarks"></ul>
+  </div>
+
+  <!-- fixed button -->
+  <div class="fixed-action-btn">
+    <a id='#modalbutton' class="btn btn-large btn-floating red waves-effect waves-light modal-trigger" href='#modalAdd'>
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+
+  <!-- add modal -->
+  <div id="modalAdd" class="modal">
+    <div class="content">
+      <div class="modal-content">
+        <h4>Add new bookmark</h4>
+        <form id="add">
+          <div class="input-field">
+            <input type="text" id="bookmark_name">
+            <label for="bookmark_name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="text" id="bookmark_url">
+            <label for="bookmark_url">URL</label>
+          </div>
+          <div class="row">
+            <div class="center-align">
+              <div class="input-field">
+                <input class="waves-effect waves-light btn" type="submit" value="submit">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+  <script src='./window.js'></script>
+</body>
+
+</html>
