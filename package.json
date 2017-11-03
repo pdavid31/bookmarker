@@ -10,6 +10,10 @@
     "package-linux": "electron-packager . --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png --prune=true --out=release-builds"
   },
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdavid31/bookmarker.git"
+  },
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
